@@ -1354,7 +1354,7 @@ function gotoPagePart(t) {
             var s = "on" + e;
             t.detachEvent && ("undefined" == typeof t[s] && (t[s] = null), t.detachEvent(s, i))
         }, J.Event = function(t, e) {
-            return this instanceof J.Event ? (t && t.type ? (this.originalEvent = t, this.type = t.type, this.isDefaultPrevented = t.defaultPrevented || t.returnValue === !1 || t.getPreventDefault && t.getPreventDefault() ? a : o) : this.type = t, e && J.extend(this, e), this.timeStamp = t && t.timeStamp || J.now(), this[J.expando] = !0, void 0) : new J.Event(t, e)
+            return this instanceof J.Event ? (t && t.type ? (this.originalEvent = t, this.type = t.type, this.isDefaultPrevented = t.defaultPrevented || t.returnValue === !1 || t.defaultPrevented && t.defaultPrevented() ? a : o) : this.type = t, e && J.extend(this, e), this.timeStamp = t && t.timeStamp || J.now(), this[J.expando] = !0, void 0) : new J.Event(t, e)
         }, J.Event.prototype = {
             preventDefault: function() {
                 this.isDefaultPrevented = a;
