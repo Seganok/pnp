@@ -36,3 +36,10 @@
 .advantage.last{
 	border-bottom: 1px solid #E6E6E6;
 }
+
+.li12{
+	list-style-type: disc;
+	font-weight: normal;
+	font-family: areal;
+	font-size: 16px;
+}
