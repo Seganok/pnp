@@ -443,13 +443,13 @@
             <div class="fld"><input type="text" class="email" name="email" value="" placeholder="Email" /></div>
             <div class="fld"><textarea class="comment" name="comment" placeholder="Сообщение"></textarea></div>
             <div class="form-agreement center">* Отправляя форму, вы даете свое согласие на <a href="http://www.transitplus.ru/agreement" target="_blank">обработку персональных данных</a></div>
-            <div class="fld"><div class="submit">Отправить</div></div>
+            <input type="submit" class="fld" value="Отправить">
         </div>
     </div>
     <div class="cnt OK" style="display:none;">
         <div class="h1">Ваша заявка принята</div>
         <p>Ваша заявка принята, менеджер свяжется с вами<br>очень оперативно и вежливо</p>
-        <div class="fld"><div class="submit">Закрыть</div></div>
+        <div><div class="submit">Закрыть</div></div>
     </div>
     <div class="toggle"></div>
 </div>
@@ -458,18 +458,20 @@
 
 <div id="consult-form">
     <div class="bg"></div>
-    <div class="cnt FORM">
-        <div class="h1">Закажите бесплатную консультацию</div>
-        <p>Напишите ваш вопрос или&nbsp;кратко опишите ситуацию, в&nbsp;которой<br /> нужна наша помощь, и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время.</p>
-        <div class="form">
-            <div class="fld"><input type="text" class="name" name="name" value="" placeholder="Имя" /></div>
-            <div class="fld"><input type="text" class="phone" name="phone" value="" placeholder="Телефон" /></div>
-            <div class="fld"><input type="text" class="email" name="email" value="" placeholder="Email" /></div>
-            <div class="fld"><textarea class="comment" name="comment" placeholder="Вопрос"></textarea></div>
-            <div class="form-agreement">* Отправляя форму, вы даете свое согласие на <a href="http://www.transitplus.ru/agreement" target="_blank">обработку персональных данных</a></div>
-            <div class="fld"><div class="submit">Отправить</div></div>
+    <form action="mail.php" method="post" class="modal_form my_form  transition">
+        <div class="cnt FORM">
+            <div class="h1">Закажите бесплатную консультацию</div>
+            <p>Напишите ваш вопрос или&nbsp;кратко опишите ситуацию, в&nbsp;которой<br /> нужна наша помощь, и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время.</p>
+            <div class="form">
+                <div class="fld"><input type="text" class="name" name="name" value="" placeholder="Имя" /></div>
+                <div class="fld"><input type="text" class="phone" name="phone" value="" placeholder="Телефон" /></div>
+                <div class="fld"><input type="text" class="email" name="email" value="" placeholder="Email" /></div>
+                <div class="fld"><textarea class="comment" name="comment" placeholder="Вопрос"></textarea></div>
+                <div class="form-agreement">* Отправляя форму, вы даете свое согласие на <a href="http://www.transitplus.ru/agreement" target="_blank">обработку персональных данных</a></div>
+                <div class="fld"><div class="submit">Отправить</div></div>
+            </div>
         </div>
-    </div>
+    </form>
     <div class="cnt OK" style="display:none;">
         <div class="h1">Ваша заявка принята</div>
         <p>Ваша заявка принята, менеджер свяжется с вами<br>очень оперативно и вежливо</p>
