@@ -8,10 +8,22 @@ h1 {font-family:RadomirBold; font-weight: bold;} p{font-family: RadomirLight;} .
 	left: 2vw;
 }
 
-.icon-bar{
-	color: white; background-color: white; border-right-color: white;
-	width: 9vw;
+ .bar1{
+	color: white !important; background-color: white !important; border-right-color: white !important; 
+	width: 9vw !important;
 	height: 1vw;
+	margin-left: 4vw;
+}
+
+.icon-bar{
+	color: black; background-color: black; border-right-color: black;
+	width: 9vw !important;
+	height: 1vw;
+	margin-left: 4vw;
+}
+
+.lol{
+	width: 100%;
 }
 
 .mn{
