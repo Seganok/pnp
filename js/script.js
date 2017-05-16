@@ -11017,9 +11017,21 @@ var __Achievements__ = !1,
             }), this.bgVideo && this.reposObject({
                 ww: this.width,
                 wh: this.height,
+                width: 1280,
+                height: 720,
                 obj: this.bgVideo
             })
         },
+        updateScroll: function(t) {
+            if (this.video) {
+                var e = t > this.height - __app__.fMH;
+                e && this.isPlaying ? (this.video.each(function() {
+                    this.pause()
+                }), this.isPlaying = !1) : e || this.isPlaying || (this.video.each(function() {
+                    this.play()
+                }), this.isPlaying = !0)
+            }
+        }
     }),
     PagePart_map = PagePart.extend({
         __className: "PagePart_map",

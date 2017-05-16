@@ -6,7 +6,12 @@ h1 {font-family:RadomirBold; font-weight: bold;} p{font-family: RadomirLight;} .
 .fixed_logo {
 	height: 5vw;
 	left: 2vw;
+}
 
+.icon-bar{
+	color: white; background-color: white; border-right-color: white;
+	width: 9vw;
+	height: 1vw;
 }
 
 .mn{
