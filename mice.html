@@ -124,13 +124,14 @@
 
 
     <div class="request-form to-the-left simple-request-form">
-
-    <div class="cnt FORM" tid="containers" mode="dostavka">
-        <div class="fld"><input class="name" type="text" placeholder="Имя" /></div>
-        <div class="fld"><input class="phone" type="text" placeholder="Телефон" /></div>
-        <div class="form-agreement">* Отправляя форму, вы даете свое согласие на <a href="/agreement" target="_blank">обработку персональных данных</a></div>
-        <div class="fld"><div class="submit">Оставить заявку</div></div>
-    </div>
+    <form action="mail.php" method="post">
+        <div class="cnt FORM" tid="containers" mode="dostavka">
+            <div class="fld"><input class="name" type="text" placeholder="Имя" /></div>
+            <div class="fld"><input class="phone" type="text" placeholder="Телефон" /></div>
+            <div class="form-agreement">* Отправляя форму, вы даете свое согласие на <a href="/agreement" target="_blank">обработку персональных данных</a></div>
+            <input type="submit" class="fld submit" value="Оставить заявку">
+        </div>
+    </form>
 
     <div class="cnt OK">
         <div class="h1">Ваша заявка принята</div>
@@ -169,14 +170,16 @@
     <div class="cnt FORM">
         <div class="h1">Задать вопрос</div>
         <p>Напишите ваш вопрос или&nbsp;кратко опишите ситуацию, в&nbsp;которой<br /> нужна наша помощь, и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время.</p>
-        <div class="form">
-            <div class="fld"><input type="text" class="name" name="name" value="" placeholder="Имя" /></div>
-            <div class="fld"><input type="text" class="phone" name="phone" value="" placeholder="Телефон" /></div>
-            <div class="fld"><input type="text" class="email" name="email" value="" placeholder="Email" /></div>
-            <div class="fld"><textarea class="comment" name="comment" placeholder="Сообщение"></textarea></div>
-            <div class="form-agreement center">* Отправляя форму, вы даете свое согласие на <a href="http://www.transitplus.ru/agreement" target="_blank">обработку персональных данных</a></div>
-            <div class="fld"><div class="submit">Отправить</div></div>
-        </div>
+        <form action="mail.php" method="post">
+            <div class="form">
+                <div class="fld"><input type="text" class="name" name="name" value="" placeholder="Имя" /></div>
+                <div class="fld"><input type="text" class="phone" name="phone" value="" placeholder="Телефон" /></div>
+                <div class="fld"><input type="text" class="email" name="email" value="" placeholder="Email" /></div>
+                <div class="fld"><textarea class="comment" name="comment" placeholder="Сообщение"></textarea></div>
+                <div class="form-agreement center">* Отправляя форму, вы даете свое согласие на <a href="http://www.transitplus.ru/agreement" target="_blank">обработку персональных данных</a></div>
+                <input type="submit" class="fld" value="Отправить">
+            </div>
+        </form>
     </div>
     <div class="cnt OK" style="display:none;">
         <div class="h1">Ваша заявка принята</div>
