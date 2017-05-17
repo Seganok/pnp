@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="css/desktop.css@ver=2.1.35.css" media="all" />
     <link rel="stylesheet" href="/css/font/font-awesome-4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
 
     <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
@@ -98,7 +100,7 @@
 
     <div class="cnt">
        <div class="cnt-text">
-            <h1>Агентство полного цикла по организации мероприятий</h1>
+            <h1>Агенство полного цикла по организации мероприятий</h1>
             </br>
             <h2>Мы объединили все самые нужные услуги в одном месте.</h2>
         </div>
@@ -360,6 +362,50 @@
 </section>
 
 <section id="contacts1">
+    <div class="container-fluid" id="contacts1-container">
+        <div class="container" id="contacts1-wrapper">
+            <form action="mail.php" method="post">
+                <div class="row">
+                    <h3 class="text-center">Поддержка для клиентов сервиса:</h3>
+                    <h1 class="text-center" id="contacts1-phone">8 (800) 775 77 28</h1>
+                    <p class="text-center" id="contacts1-question">
+                        Хотите получить готовое решение по мероприятию?</br>Заполните эту форму и мы очень быстро с Вами свяжемся:)
+                    </p>
+                 </div>
+                 <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="contacts1-inputs">
+                                 <div class="row">
+                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                         <input type="text" class="form-control" name="name" value="" required placeholder="Ваше имя и фамилия" />
+                                     </div>
+                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                         <input type="text" class="form-control" name="phone" value="" required placeholder="Ваш телефон" />
+                                     </div>
+                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                         <input type="text" class="form-control" name="email" value="" required placeholder="Email" />
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <textarea name="comment" class="form-control" cols="30" rows="10" placeholder="Дополнительная информация"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="row">
+                     <h5 class="text-center" id="contacts1-agreement">* Отправляя форму, вы даете свое согласие на <a href="http://www.transitplus.ru/agreement" target="_blank">обработку персональных данных</a></h5>
+                 </div>
+                 <div class="row text-center">
+                     <input type="submit" class="btn" value="Отправить сообщение" id="contacts1-submit">
+                 </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="contacts1">
     <div class="page-part pp-index-contacts" part-type="contacts" data-mode="index">
 
         <div class="contacts" style="height: 66vw;">
@@ -376,6 +422,7 @@
                         <div class="item-cnt" style="left: 50%;">
                             <span>Поддержка для клиентов сервиса:</span>
                             <div class="h1 ya-phone">8 (800) 775 77 28</div>
+                            
                         </div>
                     </div>
                 </div>
@@ -425,7 +472,7 @@
         </div>
 
     </div>
-</section>
+</section> -->
 <!-- Преимущества-->
 <div class="page-part map" part-type="map" style="display:none;"> 
     <div class="part-head smPad" style="padding:0px;">
