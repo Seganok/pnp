@@ -1,7 +1,7 @@
 <?php
 
 $project_name = trim($_POST["name"]);
-$admin_email  = "kasatka567@gmail.com";
+$admin_email  = "welcome@forppl.ru";
 $form_subject = 'Бесплатная консультация';
 $customerNumber = trim($_POST["email"]);
 $phone = trim($_POST["phone"]);
